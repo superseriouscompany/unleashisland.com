@@ -1,11 +1,14 @@
 {
   "name": "unleashisland.com",
-  "homepage": "https://superseriouscompany.github.io/unleashisland.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-helmet": "4",
+    "react-router-dom": "next",
+    "react-snapshot": "^1.0.4",
+    "styled-components": "^1.4.6"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0",
@@ -13,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

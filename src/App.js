@@ -6,6 +6,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="cover">
+          <h1>
+            Unleash Island
+            <small>A coworking house in Portugal</small>
+          </h1>
+        </div>
+
         <section className="section">
           <h2>The Country</h2>
           <p>

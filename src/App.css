@@ -3,3 +3,9 @@
 form.application { padding: 1em; }
 form.application label { display: block; margin: 1em 0; }
 form.application input { display: block; }
+
+.section           { padding: 1em; }
+.section .scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; margin-left: -1em; margin-right: -1em; }
+.photos            {}
+.photos .photo     { width: 50%; display: inline-block; vertical-align: top; white-space: normal; padding-left: 6px; padding-right: 6px; }
+.photos .photo img { width: 100%; }

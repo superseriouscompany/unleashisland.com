@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-ga": "^2.2.0",
     "react-helmet": "4",
     "react-router-dom": "next",
     "react-snapshot": "^1.0.4",

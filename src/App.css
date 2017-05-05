@@ -1,6 +1,7 @@
 * { box-sizing: border-box; }
 
-html, body, #root, [data-reactroot] { height: 100%; }
+html, body, #root { height: 100%; }
+.App { min-height: 100%; padding-bottom: 2em; }
 
 /* Magazine cover image and text */
 .cover { min-height: 100%; background-image: url(/images/unleash-island-baleal-creative-commune.png); background-repeat: no-repeat; background-size: cover; background-position: center center; display: flex; justify-content: flex-start; padding-top: 20%; align-items: center; flex-direction: column; }
@@ -8,15 +9,23 @@ html, body, #root, [data-reactroot] { height: 100%; }
 .cover h1 small { font-family: 'Nunito', Helvetica; font-weight: 200; display: block; font-size: 18px; }
 
 /* Sections with photos */
-.section           { padding: 1em; font-family: 'Nunito'; font-weight: 200; font-style: italic; margin-top: 62px; }
-.section h2        { font-family: 'Nunito', Helvetica; font-weight: bold; font-size: 32px; margin: 0 0 17px 0;}
-.section p         { margin-bottom: 21px; }
-.section .scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; margin-left: -1em; margin-right: -1em; }
+.section           { font-family: 'Nunito'; font-weight: 200; margin-top: 67px; padding: 0 18px; font-size: 16px; }
+.section h2        { font-family: 'Nunito', Helvetica; font-weight: bold; font-size: 32px; margin: 0 0 11px 0;}
+.section p         { margin: 0 0 21px; }
+.section .scroller { overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; margin: 0 -18px; }
 .photos            {}
 .photos .photo     { width: 320px; max-width: 50%; display: inline-block; vertical-align: top; white-space: normal; padding-left: 6px; padding-right: 6px; }
 .photos .photo img { width: 100%; }
 
 /* Application form */
-form.application { padding: 1em; }
-form.application label { display: block; margin: 1em 0; }
-form.application input { display: block; }
+form { }
+form label { display: block; margin: 0 0 21px; font-weight: bold; }
+form input, form textarea { display: block; margin-top: 17px; width: 100%; border: 1px solid #ececec; border-radius: 4px; padding: .6em; font-size: 16px; box-shadow: 0; -webkit-appearance: none; }
+form input:focus, form textarea:focus { outline: none; }
+form textarea { height: 92px; resize: none; }
+form .buttons { display: flex; justify-content: space-around; padding: 0 11px; }
+form button { background-color: #57BCD9; color: white; border: 0; border-radius: 4px; padding: .2em 0; font-size: 32px; width: 101px; text-align: center; outline: none !important; }
+form button.solo { width: 175px; padding: .3em 0 .4em; }
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */ color: rgba(0,0,0,0.3); }
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color: rgba(0,0,0,0.3); opacity: 1; }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ color: rgba(0,0,0,0.3); }

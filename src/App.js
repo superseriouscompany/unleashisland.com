@@ -98,7 +98,18 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <Form />
+
+        <section className="section">
+          <h2>Applying</h2>
+          <p>
+            We are currently taking applications for the full three-month period of
+            <strong>&nbsp;November 1st 2017 - January 31st 2018</strong>.
+            We only have room to accept twelve applicants.
+            Applying is quick and easy!
+            To quote Hillary Duff, take a crazy chance:
+          </p>
+          <Form />
+        </section>
       </div>
     );
   }

@@ -53,7 +53,7 @@ export default class Form extends Component {
     return (
       <form className="application" onSubmit={this.submit}>
         { !this.state.started ?
-          <label>
+          <label className="dateLabel">
             Can you be available November 1st - January 31st?
           </label>
         : !this.state.ready ?
@@ -93,10 +93,12 @@ export default class Form extends Component {
           </div>
         :
           <div className="buttons">
-            <button>Yes</button>
-            <button className="no">No</button>
+            <div className="buttonContainer">
+              <button>Yes</button>
+              <button className="no">No</button>
+            </div>
           </div>
-        }            
+        }
       </form>
     );
   }
